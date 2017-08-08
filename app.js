@@ -1,8 +1,8 @@
 'use:strict';
 
-var seattle = prompt('I was born in Washington state');
-consolge.log('I was born in WA state');
-if (seattle = y.toLowerCase() || yes.toLowerCase()) {
+var seattle = prompt('I was born in Washington state').toLowerCase;
+console.log('I was born in WA state');
+if (seattle = 'y' || 'yes') {
   alert('Good try! But the answer if no');
 }
 else {
