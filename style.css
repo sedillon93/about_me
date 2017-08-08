@@ -1,3 +1,7 @@
+body{
+  background-image: url(https://static.tumblr.com/ddc700d0174612b3d578d6c5a9dabaa8/gpjh4mo/CRknewh1l/tumblr_static_97y9skn3jd440oc4gcgcgo0s_640_v2.jpg);
+}
+
 h1 {
   font-size: 40px;
   color: #9a563d;
@@ -5,12 +9,12 @@ h1 {
 }
 
 .question {
-  font-size: 20px;
+  font-size: 22px;
   color: #ce180b;
   font-weight: bold;
 }
 
 .answer {
-  font-size: 17px;
+  font-size: 20px;
   color: #f1940c;
 }
