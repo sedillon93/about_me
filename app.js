@@ -1,7 +1,13 @@
 'use: strict';
 
-var name = prompt('Hello there! Glad you stopped by today. What\'s your name?')
-alert('Hello ' + name + '!' + 'Would you like to know a bit about me?')
+var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
+var playGame = prompt('Hello ' + name + '!' + 'Would you like to get to know me a bit better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.').toLowerCase();
+if playGame === 'y' || playGame === 'yes' {
+  alert('Wonderful! Let\'s play :)')
+else {
+  alert('That\'s too bad. Maybe another time.')
+}
+}
 var seattle = prompt('I was born in Washington state').toLowerCase();
 console.log('Q1: I was born in WA state');
 console.log('A1: false');
