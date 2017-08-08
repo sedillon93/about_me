@@ -1,5 +1,7 @@
 'use: strict';
 
+var name = prompt('Hello there! Glad you stopped by today. What\'s your name?')
+alert('Hello ' + name + '!' + 'Would you like to know a bit about me?')
 var seattle = prompt('I was born in Washington state').toLowerCase();
 console.log('Q1: I was born in WA state');
 console.log('A1: false');
