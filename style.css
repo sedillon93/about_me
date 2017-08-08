@@ -1,9 +1,15 @@
+h1 {
+  font-size: 40px;
+  color: #ce180b:
+}
+
 .question {
-  font-size: 30em;
-  color: blue;
+  font-size: 20px;
+  color: #d69112;
+  font-weight: bold;
 }
 
 .answer {
-  font-size: 20em;
-  color: green;
+  font-size: 17px;
+  color: #f1940c;
 }
