@@ -6,6 +6,7 @@ console.log('Would you like to get to know me? Enter yes or no');
 if (playGame === 'y' || playGame === 'yes') {
   console.log('Yes, you would like to play my guessing game.');
   alert('Wonderful! Let\'s play :)');
+
   var seattle = prompt('I was born in Washington state').toLowerCase();
   console.log('Q1: I was born in WA state');
   console.log('A1: No');

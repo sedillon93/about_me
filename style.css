@@ -2,18 +2,19 @@ body {
   background-image: url(https://static.tumblr.com/ddc700d0174612b3d578d6c5a9dabaa8/gpjh4mo/CRknewh1l/tumblr_static_97y9skn3jd440oc4gcgcgo0s_640_v2.jpg);
 }
 
-.background {
-  opacity: .3;
-}
-
 div {
   opacity: .3;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: #9a563d;
   text-align: center;
+}
+
+.intro {
+  font-size: 28px;
+  color: #9a563d;
 }
 
 .question {
