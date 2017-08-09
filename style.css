@@ -8,6 +8,7 @@ background-color: (250,250,250,.5);
 .faveThings {
   font-size: 30px;
   text-align: center;
+  margin: auto;
   color: #692208;
   float: left;
 }
