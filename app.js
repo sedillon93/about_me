@@ -94,8 +94,8 @@ if (playGame === 'y' || playGame === 'yes') {
   for (var i = 0; i < 4; i++) {
     if (parseInt(number) === 2){
       alert('Great guess! How did you know that...');
-      i = 4;
       correctAnswers++;
+      break;
     }
     else if (parseInt(number) < 2){
       alert('You\'re guess is too low');
@@ -125,8 +125,8 @@ if (playGame === 'y' || playGame === 'yes') {
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest)) {
       alert('Great!' + message);
-      i = 6;
       correctAnswers++;
+      break;
     }
     else if (!interestArray.includes(interest) && counter !== 0) {
       alert('No, that\'s not one of my favorite things');
@@ -139,7 +139,7 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
   //tally of correct answers
-alert('Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.')
+  alert('Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.');
 }
 
 else {
