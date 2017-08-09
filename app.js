@@ -102,7 +102,7 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //seventh question about
-  interestArray = ['biking', 'swimming', 'baking', 'reading', 'hiking', 'coding'];
+  interestArray = ['coding','biking', 'swimming', 'baking', 'reading', 'hiking'];
   var interest = prompt('What do you think are my favorite things to do?');
   var allInterests;
   var message = 'Great! I would have accepted ';
@@ -111,12 +111,17 @@ if (playGame === 'y' || playGame === 'yes') {
     message += interestArray[i] + ', ';
     i++;
   }
+
+  counter = 5;
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest)) {
       alert(message);
+      i = 6;
     }
     else {
       alert('No, that\'s not one of my favorite things');
+      interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
+      counter -= 1;
     }
   }
 
