@@ -139,7 +139,13 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
   //tally of correct answers
-  alert('Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.');
+  scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
+  if (correctAnswers < 4) {
+    alert(scoreMessage + ' You\'ll do better next time.');
+  }
+  else {
+    alert(scoreMessage + ' Fantastic! Keep being awesome.');
+  }
 }
 
 else {
