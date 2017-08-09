@@ -1,12 +1,12 @@
 'use: strict';
 
+//ask user for their name and if they would like to play my guessing game
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
 var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.').toLowerCase();
 console.log('Would you like to get to know me? Enter yes or no');
 if (playGame === 'y' || playGame === 'yes') {
   console.log('Yes, you would like to play my guessing game.');
   alert('Wonderful! Let\'s play :)');
-
 
 //first question about whether I was born in Seattle?
   var seattle = prompt('I was born in Washington state').toLowerCase();
@@ -99,13 +99,26 @@ if (playGame === 'y' || playGame === 'yes') {
       number = prompt('Do better this time');
     }
   }
-//seventh question
+//seventh question about
+  interestArray = ['biking', 'swimming', 'baking', 'reading', 'hiking', 'coding'];
+  var interest = prompt('What do you think are my favorite things to do?');
+  var allInterests;
+  for (var i = 0; i < interestArray.length; i++) {
+    allInterests += interestArray[i] + ' ';
+  }
+  if (interestArray.includes(interest)) {
+    alert('Well done! I would also have accepted ' + interestArray[i]);
+  }
+  else {
+    alert('No, that\'s not one of my favorite things');
+  }
+
 //tally of correct answers
 }
 
 else {
   alert('That\'s too bad. Maybe another time.');
-  console.log('No, you do no want to play');
+  console.log('No, you do not want to play');
 }
 
 //ul of work experience
