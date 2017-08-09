@@ -105,7 +105,7 @@ if (playGame === 'y' || playGame === 'yes') {
   interestArray = ['coding','biking', 'swimming', 'baking', 'reading', 'hiking'];
   var interest = prompt('What do you think are my favorite things to do?');
   var allInterests;
-  var message = 'Great! I would have accepted ';
+  var message = 'I would have accepted ';
   var i = 0;
   while (i < interestArray.length) {
     message += interestArray[i] + ', ';
@@ -115,13 +115,16 @@ if (playGame === 'y' || playGame === 'yes') {
   counter = 5;
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest)) {
-      alert(message);
+      alert('Great!' + message);
       i = 6;
     }
-    else {
+    else if (!interestArray.includes(interest) && counter !== 0) {
       alert('No, that\'s not one of my favorite things');
       interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
       counter -= 1;
+    }
+    else {
+      alert('Good try. ' + message);
     }
   }
 
