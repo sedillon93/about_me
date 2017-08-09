@@ -76,6 +76,7 @@ if (playGame === 'y' || playGame === 'yes') {
   else {
     alert('Why can\'t you follow directions?');
   }
+
 //sixth question where user guesses a number; four tries
   var number = prompt('Guess how many years I worked in elementary schools');
   console.log('Q6: Guess how many years I worked in elementary schools');
@@ -99,15 +100,19 @@ if (playGame === 'y' || playGame === 'yes') {
       number = prompt('Do better this time');
     }
   }
+
 //seventh question about
   interestArray = ['biking', 'swimming', 'baking', 'reading', 'hiking', 'coding'];
   var interest = prompt('What do you think are my favorite things to do?');
   var allInterests;
-  for (var i = 0; i < interestArray.length; i++) {
-    allInterests += interestArray[i] + ' ';
+  var message = 'Great! I would have accepted ';
+  var i = 0;
+  while (i < interestArray.length) {
+    message += interestArray[i] + ', ';
+    i++;
   }
   if (interestArray.includes(interest)) {
-    alert('Well done! I would also have accepted ' + interestArray[i]);
+    alert(message);
   }
   else {
     alert('No, that\'s not one of my favorite things');
