@@ -14,7 +14,8 @@ if (playGame === 'y' || playGame === 'yes') {
 //first question about whether I was born in Seattle?
   var seattle = prompt('I was born in Washington state').toLowerCase();
   console.log('Q1: I was born in WA state');
-  console.log('A1: No');
+  console.log('User A1: ' + seattle);
+  console.log('Correct A1: No');
   if (seattle === 'y' || seattle === 'yes') {
     alert('Good try! But the answer is no');
   }
@@ -29,7 +30,8 @@ if (playGame === 'y' || playGame === 'yes') {
 //second question about my college major
   var major = prompt('In college I majored in chemistry').toLowerCase();
   console.log('Q2: I majored in chemistry');
-  console.log('A2: No');
+  console.log('User A2: ' + major);
+  console.log('Correct A2: No');
   if (major === 'y' || major === 'yes') {
     alert('Good try! But that isn\'t the right answer');
   }
@@ -44,7 +46,8 @@ if (playGame === 'y' || playGame === 'yes') {
 //third question about how long I studied German
   var german = prompt('I spent five years studying German in school').toLowerCase();
   console.log('Q3: I studied German for 5 years');
-  console.log('A3: Yes');
+  console.log('User A3: ' + german);
+  console.log('Correct A3: Yes');
   if (german === 'y' || german === 'yes') {
     alert('High five! You got it!');
     correctAnswers++;
@@ -59,7 +62,8 @@ if (playGame === 'y' || playGame === 'yes') {
 //fourth question about where I went to college
   var college = prompt('I went to Colgate University in central New York').toLowerCase();
   console.log('Q4: I went to Colgate University');
-  console.log('A4: Yes');
+  console.log('User A4: ' + college);
+  console.log('Correct A4: Yes');
   if (college === 'y' || college === 'yes') {
     alert('Well done! You\'re doing really well');
     correctAnswers++;
@@ -74,7 +78,8 @@ if (playGame === 'y' || playGame === 'yes') {
 //fifth question about my love of scuba diving
   var scuba = prompt('Scuba diving is one of my favorite activities').toLowerCase();
   console.log('Q5: Scuba diving is my favorite activity');
-  console.log('A5: Yes');
+  console.log('User A5: ' + scuba);
+  console.log('Correct A5: Yes');
   if (scuba === 'y' || scuba === 'yes') {
     alert('Wow! You know me really well!');
     correctAnswers++;
@@ -89,7 +94,7 @@ if (playGame === 'y' || playGame === 'yes') {
 //sixth question where user guesses a number; four tries
   var number = prompt('Guess how many years I worked in elementary schools');
   console.log('Q6: Guess how many years I worked in elementary schools');
-  console.log('A6: 2');
+  console.log('Correct A6: 2');
   var i = 0;
   for (var i = 0; i < 4; i++) {
     if (parseInt(number) === 2){
@@ -109,6 +114,7 @@ if (playGame === 'y' || playGame === 'yes') {
       alert('Is that even a number???');
       number = prompt('Do better this time');
     }
+    console.log('User A2: ' + number);
   }
 
 //seventh question about
@@ -136,6 +142,7 @@ if (playGame === 'y' || playGame === 'yes') {
     else {
       alert('Good try. ' + message);
     }
+    console.log('User A2: ' + interest);
   }
 
   //tally of correct answers
@@ -146,6 +153,7 @@ if (playGame === 'y' || playGame === 'yes') {
   else {
     alert(scoreMessage + ' Fantastic! Keep being awesome.');
   }
+  console.log(correctAnswers + ' answers correct of seven questions')
 }
 
 else {
