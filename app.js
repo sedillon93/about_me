@@ -118,8 +118,8 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //seventh question about
-  interestArray = ['coding','biking', 'swimming', 'baking', 'reading', 'hiking'];
-  var interest = prompt('What do you think are my favorite things to do?');
+  interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
+  var interest = prompt('What do you think are my favorite activities to do?');
   var allInterests;
   var message = 'I would have accepted ';
   var i = 0;
