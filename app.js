@@ -145,7 +145,7 @@ if (playGame === 'y' || playGame === 'yes') {
     console.log('User A2: ' + interest);
   }
 
-  //tally of correct answers
+  //display game result with personalized message for user
   scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
   if (correctAnswers < 4) {
     alert(scoreMessage + ' You\'ll do better next time.');
@@ -153,14 +153,10 @@ if (playGame === 'y' || playGame === 'yes') {
   else {
     alert(scoreMessage + ' Fantastic! Keep being awesome.');
   }
-  console.log(correctAnswers + ' answers correct of seven questions')
+  console.log(correctAnswers + ' answers correct of seven questions');
 }
 
 else {
   alert('That\'s too bad. Maybe another time.');
   console.log('No, you do not want to play');
 }
-
-//ul of work experience
-//ul of personal interests
-//ol of Top Ten
