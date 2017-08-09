@@ -1,5 +1,8 @@
 'use: strict';
 
+//create variable for tally of correct answers to be displayed at end of game
+var correctAnswers = 0;
+
 //ask user for their name and if they would like to play my guessing game
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
 var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.').toLowerCase();
@@ -16,6 +19,8 @@ if (playGame === 'y' || playGame === 'yes') {
     alert('Good try! But the answer is no');
   }
   else if (seattle === 'n' || seattle === 'no') {
+    alert('A correct answer on the first try! Aren\'t you off to a good start?');
+    correctAnswers++;
   }
   else {
     alert('Why can\'t you follow directions?');
@@ -30,6 +35,7 @@ if (playGame === 'y' || playGame === 'yes') {
   }
   else if (major === 'n' || major === 'no') {
     alert('Good job! You got it right!');
+    correctAnswers++;
   }
   else {
     alert('Why can\'t you follow directions?');
@@ -41,6 +47,7 @@ if (playGame === 'y' || playGame === 'yes') {
   console.log('A3: Yes');
   if (german === 'y' || german === 'yes') {
     alert('High five! You got it!');
+    correctAnswers++;
   }
   else if (german === 'n' || german === 'no') {
     alert('So close! But the answer is yes');
@@ -55,6 +62,7 @@ if (playGame === 'y' || playGame === 'yes') {
   console.log('A4: Yes');
   if (college === 'y' || college === 'yes') {
     alert('Well done! You\'re doing really well');
+    correctAnswers++;
   }
   else if (college === 'n' || college === 'no'){
     alert('Sorry, you missed that one');
@@ -69,6 +77,7 @@ if (playGame === 'y' || playGame === 'yes') {
   console.log('A5: Yes');
   if (scuba === 'y' || scuba === 'yes') {
     alert('Wow! You know me really well!');
+    correctAnswers++;
   }
   else if (scuba === 'n' || scuba === 'no'){
     alert('Awww, that\'s not the right answer :(');
@@ -86,6 +95,7 @@ if (playGame === 'y' || playGame === 'yes') {
     if (parseInt(number) === 2){
       alert('Great guess! How did you know that...');
       i = 4;
+      correctAnswers++;
     }
     else if (parseInt(number) < 2){
       alert('You\'re guess is too low');
@@ -111,12 +121,12 @@ if (playGame === 'y' || playGame === 'yes') {
     message += interestArray[i] + ', ';
     i++;
   }
-
   counter = 5;
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest)) {
       alert('Great!' + message);
       i = 6;
+      correctAnswers++;
     }
     else if (!interestArray.includes(interest) && counter !== 0) {
       alert('No, that\'s not one of my favorite things');
@@ -128,7 +138,8 @@ if (playGame === 'y' || playGame === 'yes') {
     }
   }
 
-//tally of correct answers
+  //tally of correct answers
+alert('Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.')
 }
 
 else {
