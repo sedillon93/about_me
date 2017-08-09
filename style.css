@@ -13,9 +13,10 @@ background-color: (250,250,250,.5);
   float: left;
 }
 
-ol {
+ol.books {
   border: 5px groove red;
   font-size: 25px;
+  padding-right: 10px;
   float: left;
 }
 
