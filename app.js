@@ -70,7 +70,23 @@ if (playGame === 'y' || playGame === 'yes') {
   else {
     alert('Why can\'t you follow directions?');
   }
-//sixth question
+//sixth question where user guesses a number; four tries
+  var number = prompt('Guess how many years I worked in elementary schools');
+  console.log('Q6: Guess how many years I worked in elementary schools');
+  console.log('A6: 2');
+  for (var i = 0; i <= 4; i++)
+    if (parseInt(number) === 2) {
+      alert('What a fantastic guess!');
+    }
+    else if (parseInt(number) < 2){
+      alert('You\'re guess is too low');
+    }
+    else if (parseInt(number) > 2){
+      alert('That\'s too high');
+    }
+    else {
+      alert('Is that even a number???')
+    }
 //seventh question
 //tally of correct answers
 }
