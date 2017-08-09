@@ -1,29 +1,30 @@
-body {
-  background-image: url(https://static.tumblr.com/ddc700d0174612b3d578d6c5a9dabaa8/gpjh4mo/CRknewh1l/tumblr_static_97y9skn3jd440oc4gcgcgo0s_640_v2.jpg);
+div {
+  position: relative;
+  bottom: 1600px;
 }
 
-div {
-  opacity: .3;
+img {
+  opacity: .5;
 }
 
 h1 {
   font-size: 50px;
-  color: #9a563d;
+  color: #692208;
   text-align: center;
 }
 
 .intro {
   font-size: 28px;
-  color: #9a563d;
+  color: #5a1f09;
 }
 
 .question {
   font-size: 22px;
-  color: #ce180b;
+  color: #96160c;
   font-weight: bold;
 }
 
 .answer {
   font-size: 20px;
-  color: #f1940c;
+  color: #d24210;
 }
