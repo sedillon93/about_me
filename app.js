@@ -13,8 +13,10 @@ if (playGame === 'y' || playGame === 'yes') {
   if (seattle === 'y' || seattle === 'yes') {
     alert('Good try! But the answer is no');
   }
+  else if (seattle === 'n' || seattle === 'no') {
+  }
   else {
-    alert('Good job! You got it right!');
+    alert('Why can\'t you follow directions?');
   }
 
   var major = prompt('In college I majored in chemistry').toLowerCase();
@@ -23,8 +25,11 @@ if (playGame === 'y' || playGame === 'yes') {
   if (major === 'y' || major === 'yes') {
     alert('Good try! But that isn\'t the right answer');
   }
-  else {
+  else if (major === 'n' || major === 'no') {
     alert('Good job! You got it right!');
+  }
+  else {
+    alert('Why can\'t you follow directions?');
   }
 
   var german = prompt('I spent five years studying German in school').toLowerCase();
@@ -33,8 +38,11 @@ if (playGame === 'y' || playGame === 'yes') {
   if (german === 'y' || german === 'yes') {
     alert('High five! You got it!');
   }
-  else {
+  else if (german === 'n' || german === 'no') {
     alert('So close! But the answer is yes');
+  }
+  else {
+    alert('Why can\'t you follow directions?');
   }
 
   var college = prompt('I went to Colgate University in central New York').toLowerCase();
@@ -43,8 +51,11 @@ if (playGame === 'y' || playGame === 'yes') {
   if (college === 'y' || college === 'yes') {
     alert('Well done! You\'re doing really well');
   }
-  else {
+  else if (college === 'n' || college === 'no'){
     alert('Sorry, you missed that one');
+  }
+  else {
+    alert('Why can\'t you follow directions?');
   }
 
   var scuba = prompt('Scuba diving is one of my favorite activities').toLowerCase();
@@ -53,12 +64,22 @@ if (playGame === 'y' || playGame === 'yes') {
   if (scuba === 'y' || scuba === 'yes') {
     alert('Wow! You know me really well!');
   }
-  else {
+  else if (scuba === 'n' || scuba === 'no'){
     alert('Awww, that\'s not the right answer :(');
   }
+  else {
+    alert('Why can\'t you follow directions?');
+  }
+//sixth question
+//seventh question
+//tally of correct answers
 }
 
 else {
   alert('That\'s too bad. Maybe another time.');
   console.log('No, you do no want to play');
 }
+
+//ul of work experience
+//ul of personal interests
+//ol of Top Ten
