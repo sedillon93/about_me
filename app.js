@@ -111,11 +111,13 @@ if (playGame === 'y' || playGame === 'yes') {
     message += interestArray[i] + ', ';
     i++;
   }
-  if (interestArray.includes(interest)) {
-    alert(message);
-  }
-  else {
-    alert('No, that\'s not one of my favorite things');
+  for (var i = 0; i < 6; i++){
+    if (interestArray.includes(interest)) {
+      alert(message);
+    }
+    else {
+      alert('No, that\'s not one of my favorite things');
+    }
   }
 
 //tally of correct answers
