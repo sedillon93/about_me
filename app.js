@@ -18,7 +18,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     var trueFalseArray = [
       ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?'],
       ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?'],
-      ['Why can\'t you follow directions?'],
+      ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?'],
       ['Why can\'t you follow directions?'],
       ['Why can\'t you follow directions?']
     ];
@@ -42,32 +42,32 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   // }
 
 //second question about my college major
-  var major = prompt();
-  console.log('Q2: Did I major in chemistry?');
-  console.log('User A2: ' + major);
-  console.log('Correct A2: No');
-  if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
-    alert();
-  }
-  else if (major.toLowerCase() === 'n' || major.toLowerCase() === 'no') {
-    alert();
-    correctAnswers++;
-  }
-  else {
-    alert('Why can\'t you follow directions?');
-  }
+  // var major = prompt();
+  // console.log('Q2: Did I major in chemistry?');
+  // console.log('User A2: ' + major);
+  // console.log('Correct A2: No');
+  // if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
+  //   alert();
+  // }
+  // else if (major.toLowerCase() === 'n' || major.toLowerCase() === 'no') {
+  //   alert();
+  //   correctAnswers++;
+  // }
+  // else {
+  //   alert('Why can\'t you follow directions?');
+  // }
 
 //third question about how long I studied German
-  var german = prompt('Did I spend five years studying German in school?');
+  var german = prompt();
   console.log('Q3: Did I study German for 5 years?');
   console.log('User A3: ' + german);
   console.log('Correct A3: Yes');
   if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
-    alert('High five! You got it!');
+    alert();
     correctAnswers++;
   }
   else if (german.toLowerCase() === 'n' || german.toLowerCase() === 'no') {
-    alert('So close! But the answer is yes');
+    alert();
   }
   else {
     alert('Why can\'t you follow directions?');
