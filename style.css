@@ -22,13 +22,22 @@ h1 {
 .col-2 {
   float: left;
   box-sizing: border-box;
-  width: 48%;
+  width: 50%;
+}
+
+.proTitle {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  float: left;
 }
 
 .factTitle {
-  margin: auto;
+  font-size: 28px;
   text-align: center;
   font-weight: bold;
+  margin: auto;
 }
 
 .funFacts, .professional, .books {
