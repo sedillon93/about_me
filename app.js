@@ -20,10 +20,12 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
       ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?'],
       ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?'],
       ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?'],
-      ['Why can\'t you follow directions?']
+      ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?']
     ];
 
   }
+
+  trueFalse();
 
 //first question about whether I was born in Seattle?
   // var seattle = prompt();
@@ -74,36 +76,36 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   // }
 
 //fourth question about where I went to college
-  var college = prompt();
-  console.log('Q4: Did I go to Colgate University?');
-  console.log('User A4: ' + college);
-  console.log('Correct A4: Yes');
-  if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
-    alert();
-    correctAnswers++;
-  }
-  else if (college.toLowerCase() === 'n' || college.toLowerCase() === 'no'){
-    alert();
-  }
-  else {
-    alert('Why can\'t you follow directions?');
-  }
+  // var college = prompt();
+  // console.log('Q4: Did I go to Colgate University?');
+  // console.log('User A4: ' + college);
+  // console.log('Correct A4: Yes');
+  // if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
+  //   alert();
+  //   correctAnswers++;
+  // }
+  // else if (college.toLowerCase() === 'n' || college.toLowerCase() === 'no'){
+  //   alert();
+  // }
+  // else {
+  //   alert('Why can\'t you follow directions?');
+  // }
 
 //fifth question about my love of scuba diving
-  var season = prompt('Is fall my favorite season?');
-  console.log('Q5: Is fall my favorite season?');
-  console.log('User A5: ' + season);
-  console.log('Correct A5: Yes');
-  if (season.toLowerCase() === 'y' || season.toLowerCase() === 'yes') {
-    alert('Wow! You know me really well!');
-    correctAnswers++;
-  }
-  else if (season.toLowerCase() === 'n' || season.toLowerCase() === 'no'){
-    alert('Awww, that\'s not the right answer :(');
-  }
-  else {
-    alert('Why can\'t you follow directions?');
-  }
+  // var season = prompt();
+  // console.log('Q5: Is fall my favorite season?');
+  // console.log('User A5: ' + season);
+  // console.log('Correct A5: Yes');
+  // if (season.toLowerCase() === 'y' || season.toLowerCase() === 'yes') {
+  //   alert();
+  //   correctAnswers++;
+  // }
+  // else if (season.toLowerCase() === 'n' || season.toLowerCase() === 'no'){
+  //   alert();
+  // }
+  // else {
+  //   alert('Why can\'t you follow directions?');
+  // }
 
 //sixth question where user guesses a number; four tries
   var number = prompt('Guess how many years I worked in elementary schools');
