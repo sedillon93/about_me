@@ -130,7 +130,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   counter = 5;
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest.toLowerCase())) {
-      alert('Great!' + message);
+      alert('Great!' + message + interestArray[5]);
       correctAnswers++;
       break;
     }
