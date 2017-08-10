@@ -12,8 +12,8 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   alert('Wonderful! Let\'s play :)');
 
 //first question about whether I was born in Seattle?
-  var seattle = prompt('I was born in Washington state');
-  console.log('Q1: I was born in WA state');
+  var seattle = prompt('Was I born in Washington state?');
+  console.log('Q1: Was I born in WA state?');
   console.log('User A1: ' + seattle);
   console.log('Correct A1: No');
   if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
@@ -28,8 +28,8 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   }
 
 //second question about my college major
-  var major = prompt('In college I majored in chemistry');
-  console.log('Q2: I majored in chemistry');
+  var major = prompt('In college did I major in chemistry?');
+  console.log('Q2: Did I major in chemistry?');
   console.log('User A2: ' + major);
   console.log('Correct A2: No');
   if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
@@ -44,8 +44,8 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   }
 
 //third question about how long I studied German
-  var german = prompt('I spent five years studying German in school');
-  console.log('Q3: I studied German for 5 years');
+  var german = prompt('Did I spend five years studying German in school?');
+  console.log('Q3: Did I study German for 5 years?');
   console.log('User A3: ' + german);
   console.log('Correct A3: Yes');
   if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
@@ -60,8 +60,8 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   }
 
 //fourth question about where I went to college
-  var college = prompt('I went to Colgate University in central New York');
-  console.log('Q4: I went to Colgate University');
+  var college = prompt('Did I go to Colgate University?');
+  console.log('Q4: Did I go to Colgate University?');
   console.log('User A4: ' + college);
   console.log('Correct A4: Yes');
   if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
@@ -76,15 +76,15 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   }
 
 //fifth question about my love of scuba diving
-  var scuba = prompt('Scuba diving is one of my favorite activities');
-  console.log('Q5: Scuba diving is my favorite activity');
-  console.log('User A5: ' + scuba);
+  var season = prompt('Is fall my favorite season?');
+  console.log('Q5: Is fall my favorite season?');
+  console.log('User A5: ' + season);
   console.log('Correct A5: Yes');
-  if (scuba.toLowerCase() === 'y' || scuba.toLowerCase() === 'yes') {
+  if (season.toLowerCase() === 'y' || season.toLowerCase() === 'yes') {
     alert('Wow! You know me really well!');
     correctAnswers++;
   }
-  else if (scuba.toLowerCase() === 'n' || scuba.toLowerCase() === 'no'){
+  else if (season.toLowerCase() === 'n' || season.toLowerCase() === 'no'){
     alert('Awww, that\'s not the right answer :(');
   }
   else {
@@ -119,7 +119,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
 //seventh question about
   interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
-  var interest = prompt('What do you think are my favorite activities to do?');
+  var interest = prompt('What do you think is one of my favorite activities to do?');
   var allInterests;
   var message = 'I would have accepted ';
   var i = 0;
