@@ -5,21 +5,21 @@ var correctAnswers = 0;
 
 //ask user for their name and if they would like to play my guessing game
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
-var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.').toLowerCase();
+var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.');
 console.log('Would you like to get to know me? Enter yes or no');
-if (playGame === 'y' || playGame === 'yes') {
+if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   console.log('Yes, you would like to play my guessing game.');
   alert('Wonderful! Let\'s play :)');
 
 //first question about whether I was born in Seattle?
-  var seattle = prompt('I was born in Washington state').toLowerCase();
+  var seattle = prompt('I was born in Washington state');
   console.log('Q1: I was born in WA state');
   console.log('User A1: ' + seattle);
   console.log('Correct A1: No');
-  if (seattle === 'y' || seattle === 'yes') {
+  if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
     alert('Good try! But the answer is no');
   }
-  else if (seattle === 'n' || seattle === 'no') {
+  else if (seattle.toLowerCase() === 'n' || seattle.toLowerCase() === 'no') {
     alert('A correct answer on the first try! Aren\'t you off to a good start?');
     correctAnswers++;
   }
@@ -28,14 +28,14 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //second question about my college major
-  var major = prompt('In college I majored in chemistry').toLowerCase();
+  var major = prompt('In college I majored in chemistry');
   console.log('Q2: I majored in chemistry');
   console.log('User A2: ' + major);
   console.log('Correct A2: No');
-  if (major === 'y' || major === 'yes') {
+  if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
     alert('Good try! But that isn\'t the right answer');
   }
-  else if (major === 'n' || major === 'no') {
+  else if (major.toLowerCase() === 'n' || major.toLowerCase() === 'no') {
     alert('Good job! You got it right!');
     correctAnswers++;
   }
@@ -44,15 +44,15 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //third question about how long I studied German
-  var german = prompt('I spent five years studying German in school').toLowerCase();
+  var german = prompt('I spent five years studying German in school');
   console.log('Q3: I studied German for 5 years');
   console.log('User A3: ' + german);
   console.log('Correct A3: Yes');
-  if (german === 'y' || german === 'yes') {
+  if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
     alert('High five! You got it!');
     correctAnswers++;
   }
-  else if (german === 'n' || german === 'no') {
+  else if (german.toLowerCase() === 'n' || german.toLowerCase() === 'no') {
     alert('So close! But the answer is yes');
   }
   else {
@@ -60,15 +60,15 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //fourth question about where I went to college
-  var college = prompt('I went to Colgate University in central New York').toLowerCase();
+  var college = prompt('I went to Colgate University in central New York');
   console.log('Q4: I went to Colgate University');
   console.log('User A4: ' + college);
   console.log('Correct A4: Yes');
-  if (college === 'y' || college === 'yes') {
+  if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
     alert('Well done! You\'re doing really well');
     correctAnswers++;
   }
-  else if (college === 'n' || college === 'no'){
+  else if (college.toLowerCase() === 'n' || college.toLowerCase() === 'no'){
     alert('Sorry, you missed that one');
   }
   else {
@@ -76,15 +76,15 @@ if (playGame === 'y' || playGame === 'yes') {
   }
 
 //fifth question about my love of scuba diving
-  var scuba = prompt('Scuba diving is one of my favorite activities').toLowerCase();
+  var scuba = prompt('Scuba diving is one of my favorite activities');
   console.log('Q5: Scuba diving is my favorite activity');
   console.log('User A5: ' + scuba);
   console.log('Correct A5: Yes');
-  if (scuba === 'y' || scuba === 'yes') {
+  if (scuba.toLowerCase() === 'y' || scuba.toLowerCase() === 'yes') {
     alert('Wow! You know me really well!');
     correctAnswers++;
   }
-  else if (scuba === 'n' || scuba === 'no'){
+  else if (scuba.toLowerCase() === 'n' || scuba.toLowerCase() === 'no'){
     alert('Awww, that\'s not the right answer :(');
   }
   else {
@@ -129,12 +129,12 @@ if (playGame === 'y' || playGame === 'yes') {
   }
   counter = 5;
   for (var i = 0; i < 6; i++){
-    if (interestArray.includes(interest)) {
+    if (interestArray.includes(interest.toLowerCase())) {
       alert('Great!' + message);
       correctAnswers++;
       break;
     }
-    else if (!interestArray.includes(interest) && counter !== 0) {
+    else if (!interestArray.includes(interest.toLowerCase()) && counter !== 0) {
       alert('No, that\'s not one of my favorite things');
       interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
       counter -= 1;

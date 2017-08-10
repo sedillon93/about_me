@@ -22,7 +22,8 @@ h1 {
 .col-2 {
   float: left;
   box-sizing: border-box;
-  width: 50%;
+  width: 48%;
+  margin: auto;
 }
 
 .proTitle {
@@ -30,7 +31,6 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
-  float: left;
 }
 
 .factTitle {
