@@ -17,40 +17,40 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4]
     var trueFalseArray = [
       ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?'],
-      [],
-      [],
-      [],
-      []
+      ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?'],
+      ['Why can\'t you follow directions?'],
+      ['Why can\'t you follow directions?'],
+      ['Why can\'t you follow directions?']
     ];
 
   }
 
 //first question about whether I was born in Seattle?
-  var seattle = prompt();
-  console.log('Q1: Was I born in WA state?');
-  console.log('User A1: ' + seattle);
-  console.log('Correct A1: No');
-  if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
-    alert();
-  }
-  else if (seattle.toLowerCase() === 'n' || seattle.toLowerCase() === 'no') {
-    alert();
-    correctAnswers++;
-  }
-  else {
-    alert();
-  }
+  // var seattle = prompt();
+  // console.log('Q1: Was I born in WA state?');
+  // console.log('User A1: ' + seattle);
+  // console.log('Correct A1: No');
+  // if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
+  //   alert();
+  // }
+  // else if (seattle.toLowerCase() === 'n' || seattle.toLowerCase() === 'no') {
+  //   alert();
+  //   correctAnswers++;
+  // }
+  // else {
+  //   alert();
+  // }
 
 //second question about my college major
-  var major = prompt('In college did I major in chemistry?');
+  var major = prompt();
   console.log('Q2: Did I major in chemistry?');
   console.log('User A2: ' + major);
   console.log('Correct A2: No');
   if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
-    alert('Good try! But that isn\'t the right answer');
+    alert();
   }
   else if (major.toLowerCase() === 'n' || major.toLowerCase() === 'no') {
-    alert('Good job! You got it right!');
+    alert();
     correctAnswers++;
   }
   else {
