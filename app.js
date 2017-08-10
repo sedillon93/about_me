@@ -5,26 +5,40 @@ var correctAnswers = 0;
 
 //ask user for their name and if they would like to play my guessing game
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
+
 var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.');
 console.log('Would you like to get to know me? Enter yes or no');
 if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   console.log('Yes, you would like to play my guessing game.');
   alert('Wonderful! Let\'s play :)');
 
+  function trueFalse() {
+
+    //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4]
+    var trueFalseArray = [
+      ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?'],
+      [],
+      [],
+      [],
+      []
+    ];
+
+  }
+
 //first question about whether I was born in Seattle?
-  var seattle = prompt('Was I born in Washington state?');
+  var seattle = prompt();
   console.log('Q1: Was I born in WA state?');
   console.log('User A1: ' + seattle);
   console.log('Correct A1: No');
   if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
-    alert('Good try! But the answer is no');
+    alert();
   }
   else if (seattle.toLowerCase() === 'n' || seattle.toLowerCase() === 'no') {
-    alert('A correct answer on the first try! Aren\'t you off to a good start?');
+    alert();
     correctAnswers++;
   }
   else {
-    alert('Why can\'t you follow directions?');
+    alert();
   }
 
 //second question about my college major
