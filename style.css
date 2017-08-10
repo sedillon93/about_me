@@ -9,6 +9,8 @@ body {
   background-image: url(http://4.bp.blogspot.com/-qrdCYsvSlk8/UIA1pjV5llI/AAAAAAAACTE/A6ZUZth9Dho/s1600/fall_pattern_full_003.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #5f1e07;
+  font-size: 25px;
   }
 
 h1 {
@@ -20,18 +22,23 @@ h1 {
 .col-2 {
   float: left;
   box-sizing: border-box;
-  width: 50%;
+  width: 48%;
 }
 
-.funFacts {
+.factTitle {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.funFacts, .professional, .books {
   border: 5px groove red;
-  font-size: 25px;
-  padding-right: 10px;
 }
 
 .knowMe {
   font-size: 40px;
   text-align: center;
+  font-weight: bold;
   margin: auto;
   color: #692208;
 }
@@ -39,13 +46,12 @@ h1 {
 .faveThings {
   font-size: 28px;
   text-align: center;
+  font-weight: bold;
   margin: auto;
   color: #692208;
 }
 
 ol.books {
-  border: 5px groove red;
-  font-size: 25px;
   padding-right: 10px;
 }
 
