@@ -19,7 +19,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
       ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?'],
       ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?'],
       ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?'],
-      ['Why can\'t you follow directions?'],
+      ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?'],
       ['Why can\'t you follow directions?']
     ];
 
@@ -58,32 +58,32 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   // }
 
 //third question about how long I studied German
-  var german = prompt();
-  console.log('Q3: Did I study German for 5 years?');
-  console.log('User A3: ' + german);
-  console.log('Correct A3: Yes');
-  if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
-    alert();
-    correctAnswers++;
-  }
-  else if (german.toLowerCase() === 'n' || german.toLowerCase() === 'no') {
-    alert();
-  }
-  else {
-    alert('Why can\'t you follow directions?');
-  }
+  // var german = prompt();
+  // console.log('Q3: Did I study German for 5 years?');
+  // console.log('User A3: ' + german);
+  // console.log('Correct A3: Yes');
+  // if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
+  //   alert();
+  //   correctAnswers++;
+  // }
+  // else if (german.toLowerCase() === 'n' || german.toLowerCase() === 'no') {
+  //   alert();
+  // }
+  // else {
+  //   alert('Why can\'t you follow directions?');
+  // }
 
 //fourth question about where I went to college
-  var college = prompt('Did I go to Colgate University?');
+  var college = prompt();
   console.log('Q4: Did I go to Colgate University?');
   console.log('User A4: ' + college);
   console.log('Correct A4: Yes');
   if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
-    alert('Well done! You\'re doing really well');
+    alert();
     correctAnswers++;
   }
   else if (college.toLowerCase() === 'n' || college.toLowerCase() === 'no'){
-    alert('Sorry, you missed that one');
+    alert();
   }
   else {
     alert('Why can\'t you follow directions?');
