@@ -14,14 +14,33 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
   function trueFalse() {
 
-    //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4]
+    //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4], incorrect answers[5]
     var trueFalseArray = [
-      ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?'],
-      ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?'],
-      ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?'],
-      ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?'],
-      ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?']
+      ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?', ['yes', 'y']],
+      ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?', ['yes', 'y']],
+      ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?', ['no', 'n']],
+      ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?', ['no', 'n']],
+      ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?', ['no', 'n']]
     ];
+
+    //conditional to ask the true/false questions
+    for (var i = 0; i < trueFalseArray.length; i++) {
+
+      var userInput = prompt(trueFalseArray[i][0]);
+      console.log(trueFalseArray[1][0]);
+      console.log(userInput);
+
+      if (trueFalseArray[i].includes(userInput.toLowerCase)) {
+
+        alert(trueFalseArray[i][2]);
+        correctAnswers++;
+        break;
+
+      } else if (trueFalseArray) {
+
+      }
+
+    }
 
   }
 
