@@ -84,40 +84,33 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
   elementaryYears();
 
+  //seventh question: interests!
   function interests() {
 
     //
     var interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
     //answers: accept message[0], correct response[1], incorrect response[2],
-    var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.']
+    var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.'];
+
     var interest = prompt('What do you think is one of my favorite activities to do?');
 
-  }
-
-//seventh question about
-
-  var message = ;
-  var i = 0;
-  while (i < interestArray.length) {
-    message += interestArray[i] + ', ';
-    i++;
-  }
-  counter = 5;
-  for (var i = 0; i < 6; i++){
-    if (interestArray.includes(interest.toLowerCase())) {
-      alert();
-      correctAnswers++;
-      break;
+    counter = 5;
+    for (var i = 0; i < 6; i++){
+      if (interestArray.includes(interest.toLowerCase())) {
+        alert(answersArray[1] + ' ' + answersArray[0] + interestArray.join(', '));
+        correctAnswers++;
+        break;
+      }
+      else if (!interestArray.includes(interest.toLowerCase()) && counter !== 0) {
+        alert(answersArray[2]);
+        interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
+        counter -= 1;
+      }
+      else {
+        alert(answersArray[3] + ' ' + answersArray[0] + interestArray.join(', '));
+      }
+      console.log('User A2: ' + interest);
     }
-    else if (!interestArray.includes(interest.toLowerCase()) && counter !== 0) {
-      alert();
-      interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
-      counter -= 1;
-    }
-    else {
-      alert( + message);
-    }
-    console.log('User A2: ' + interest);
   }
 
   //display game result with personalized message for user
