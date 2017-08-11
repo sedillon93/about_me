@@ -16,43 +16,36 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
     //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4], incorrect answers[5]
     var trueFalseArray = [
-      ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?', ['yes', 'y']],
-      ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?', ['yes', 'y']],
-      ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?', ['no', 'n']],
-      ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?', ['no', 'n']],
-      ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?', ['no', 'n']]
+      question1 = ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?', ['yes', 'y']],
+      quesiton2 = ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?', ['yes', 'y']],
+      quesiton3 = ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?', ['no', 'n']],
+      question4 = ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?', ['no', 'n']],
+      question5 = ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?', ['no', 'n']]
     ];
 
     //conditional to ask the true/false questions
     for (var i = 0; i < trueFalseArray.length; i++) {
-
       var userInput = prompt(trueFalseArray[i][0]);
       console.log(trueFalseArray[i][0]);
       console.log(userInput);
 
       if (trueFalseArray[i][1].includes(userInput.toLowerCase())) {
-
         alert(trueFalseArray[i][2]);
         correctAnswers++;
-
-      }else if (trueFalseArray[i][5].includes(userInput.toLowerCase())) {
-
+      }
+      else if (trueFalseArray[i][5].includes(userInput.toLowerCase())) {
         alert(trueFalseArray[i][3]);
-
-      }else
-
+      }
+      else
       alert(trueFalseArray[i][4]);
-
     }
-
   }
-
+  //call trueFalse function
   trueFalse();
 
   //sixth question where user guesses a number; four tries
   function elementaryYears() {
-
-    //array of responses: correst answer[0], too low[1], too high[2], NaN[3], prompt to guess again[4], do better[5]
+    //array of responses: correst answer[0], too low[1], too high[2], nonsense[3], prompt to guess again[4], do better[5]
     var responses = ['Great guess! How did you know that...', 'Your guess is too low', 'That\'s too high', 'Is that even a number???', 'Guess again', 'Do better this time'];
 
     var number = prompt('Guess how many years I worked in elementary schools');
@@ -79,17 +72,17 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     }
   }
 
+  //call elementaryYears function
   elementaryYears();
 
   //seventh question: interests!
   function interests() {
-
-    //
+    //array of my interests
     var interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
     //answers: accept message[0], correct response[1], incorrect response[2],
     var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.'];
 
-    var interest = prompt('What do you think is one of my favorite activities to do?');
+    var interest = prompt('What do you think is one of my favorite activities to do? (no -ing words)');
 
     counter = 5;
     for (var i = 0; i < 6; i++){
@@ -109,7 +102,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
       console.log('User A2: ' + interest);
     }
   }
-
+  //call interests function
   interests();
 
   //display game result with personalized message for user
