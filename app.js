@@ -34,8 +34,6 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
         alert(trueFalseArray[i][2]);
         correctAnswers++;
-        console.log('this worked');
-        break;
 
       }else if (trueFalseArray[i][5].includes(userInput.toLowerCase())) {
 
@@ -62,7 +60,6 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     for (var i = 0; i < 4; i++) {
       if (parseInt(number) === 2){
         alert(responses[0]);
-        console.log('this happened');
         correctAnswers++;
         break;
       }
@@ -97,7 +94,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     counter = 5;
     for (var i = 0; i < 6; i++){
       if (interestArray.includes(interest.toLowerCase())) {
-        alert(answersArray[1] + ' ' + answersArray[0] + interestArray.join(', '));
+        alert(answersArray[1] + ' ' + answersArray[0] + ' ' + interestArray.join(', '));
         correctAnswers++;
         break;
       }
@@ -107,11 +104,13 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
         counter -= 1;
       }
       else {
-        alert(answersArray[3] + ' ' + answersArray[0] + interestArray.join(', '));
+        alert(answersArray[3] + ' ' + answersArray[0] + ' ' + interestArray.join(', '));
       }
       console.log('User A2: ' + interest);
     }
   }
+
+  interests();
 
   //display game result with personalized message for user
   scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
