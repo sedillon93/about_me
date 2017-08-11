@@ -27,18 +27,23 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
     for (var i = 0; i < trueFalseArray.length; i++) {
 
       var userInput = prompt(trueFalseArray[i][0]);
-      console.log(trueFalseArray[1][0]);
+      console.log(trueFalseArray[i][0]);
       console.log(userInput);
 
-      if (trueFalseArray[i].includes(userInput.toLowerCase)) {
+      if (trueFalseArray[i][1].includes(userInput.toLowerCase())) {
 
         alert(trueFalseArray[i][2]);
         correctAnswers++;
+        console.log('this worked');
         break;
 
-      } else if (trueFalseArray) {
+      }else if (trueFalseArray[i][5].includes(userInput.toLowerCase())) {
 
-      }
+        alert(trueFalseArray[i][3]);
+
+      }else
+
+      alert(trueFalseArray[i][4]);
 
     }
 
