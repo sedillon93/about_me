@@ -84,11 +84,19 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
   elementaryYears();
 
+  function interests() {
+
+    //
+    var interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
+    //answers: accept message[0], correct response[1], incorrect response[2],
+    var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.']
+    var interest = prompt('What do you think is one of my favorite activities to do?');
+
+  }
+
 //seventh question about
-  interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
-  var interest = prompt('What do you think is one of my favorite activities to do?');
-  var allInterests;
-  var message = 'I would have accepted ';
+
+  var message = ;
   var i = 0;
   while (i < interestArray.length) {
     message += interestArray[i] + ', ';
@@ -97,17 +105,17 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   counter = 5;
   for (var i = 0; i < 6; i++){
     if (interestArray.includes(interest.toLowerCase())) {
-      alert('Great!' + message + interestArray[5]);
+      alert();
       correctAnswers++;
       break;
     }
     else if (!interestArray.includes(interest.toLowerCase()) && counter !== 0) {
-      alert('No, that\'s not one of my favorite things');
+      alert();
       interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
       counter -= 1;
     }
     else {
-      alert('Good try. ' + message);
+      alert( + message);
     }
     console.log('User A2: ' + interest);
   }
