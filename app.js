@@ -51,111 +51,43 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
   trueFalse();
 
-//first question about whether I was born in Seattle?
-  // var seattle = prompt();
-  // console.log('Q1: Was I born in WA state?');
-  // console.log('User A1: ' + seattle);
-  // console.log('Correct A1: No');
-  // if (seattle.toLowerCase() === 'y' || seattle.toLowerCase() === 'yes') {
-  //   alert();
-  // }
-  // else if (seattle.toLowerCase() === 'n' || seattle.toLowerCase() === 'no') {
-  //   alert();
-  //   correctAnswers++;
-  // }
-  // else {
-  //   alert();
-  // }
+  function elementaryYears() {
 
-//second question about my college major
-  // var major = prompt();
-  // console.log('Q2: Did I major in chemistry?');
-  // console.log('User A2: ' + major);
-  // console.log('Correct A2: No');
-  // if (major.toLowerCase() === 'y' || major.toLowerCase() === 'yes') {
-  //   alert();
-  // }
-  // else if (major.toLowerCase() === 'n' || major.toLowerCase() === 'no') {
-  //   alert();
-  //   correctAnswers++;
-  // }
-  // else {
-  //   alert('Why can\'t you follow directions?');
-  // }
+    //array of responses: correst answer[0], too low[1], too high[2], NaN[3], prompt to guess again[4], do better[5]
+    var responses = ['Great guess! How did you know that...', 'You\'re guess is too low', 'That\'s too high', 'Is that even a number???', 'Guess again', 'Do better this time'];
 
-//third question about how long I studied German
-  // var german = prompt();
-  // console.log('Q3: Did I study German for 5 years?');
-  // console.log('User A3: ' + german);
-  // console.log('Correct A3: Yes');
-  // if (german.toLowerCase() === 'y' || german.toLowerCase() === 'yes') {
-  //   alert();
-  //   correctAnswers++;
-  // }
-  // else if (german.toLowerCase() === 'n' || german.toLowerCase() === 'no') {
-  //   alert();
-  // }
-  // else {
-  //   alert('Why can\'t you follow directions?');
-  // }
+    var number = prompt('Guess how many years I worked in elementary schools');
 
-//fourth question about where I went to college
-  // var college = prompt();
-  // console.log('Q4: Did I go to Colgate University?');
-  // console.log('User A4: ' + college);
-  // console.log('Correct A4: Yes');
-  // if (college.toLowerCase() === 'y' || college.toLowerCase() === 'yes') {
-  //   alert();
-  //   correctAnswers++;
-  // }
-  // else if (college.toLowerCase() === 'n' || college.toLowerCase() === 'no'){
-  //   alert();
-  // }
-  // else {
-  //   alert('Why can\'t you follow directions?');
-  // }
-
-//fifth question about my love of scuba diving
-  // var season = prompt();
-  // console.log('Q5: Is fall my favorite season?');
-  // console.log('User A5: ' + season);
-  // console.log('Correct A5: Yes');
-  // if (season.toLowerCase() === 'y' || season.toLowerCase() === 'yes') {
-  //   alert();
-  //   correctAnswers++;
-  // }
-  // else if (season.toLowerCase() === 'n' || season.toLowerCase() === 'no'){
-  //   alert();
-  // }
-  // else {
-  //   alert('Why can\'t you follow directions?');
-  // }
+    for (var i = 0; i < 4; i++) {
+      if (parseInt(number) === 2){
+        alert(responses[0]);
+        correctAnswers++;
+        break;
+      }
+      else if (parseInt(number) < 2){
+        alert(responses[1]);
+        number = prompt(responses[4]);
+      }
+      else if (parseInt(number) > 2){
+        alert(responses[2]);
+        number = prompt(responses[4]);
+      }
+      else {
+        alert(responses[3]);
+        number = prompt(responses[5]);
+      }
+      console.log('User A2: ' + number);
+    }
+    }
+  }
 
 //sixth question where user guesses a number; four tries
-  var number = prompt('Guess how many years I worked in elementary schools');
+
   console.log('Q6: Guess how many years I worked in elementary schools');
   console.log('Correct A6: 2');
   var i = 0;
   for (var i = 0; i < 4; i++) {
-    if (parseInt(number) === 2){
-      alert('Great guess! How did you know that...');
-      correctAnswers++;
-      break;
-    }
-    else if (parseInt(number) < 2){
-      alert('You\'re guess is too low');
-      number = prompt('Guess again');
-    }
-    else if (parseInt(number) > 2){
-      alert('That\'s too high');
-      number = prompt('Guess again');
-    }
-    else {
-      alert('Is that even a number???');
-      number = prompt('Do better this time');
-    }
-    console.log('User A2: ' + number);
-  }
+
 
 //seventh question about
   interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
