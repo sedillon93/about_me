@@ -51,16 +51,18 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
 
   trueFalse();
 
+  //sixth question where user guesses a number; four tries
   function elementaryYears() {
 
     //array of responses: correst answer[0], too low[1], too high[2], NaN[3], prompt to guess again[4], do better[5]
-    var responses = ['Great guess! How did you know that...', 'You\'re guess is too low', 'That\'s too high', 'Is that even a number???', 'Guess again', 'Do better this time'];
+    var responses = ['Great guess! How did you know that...', 'Your guess is too low', 'That\'s too high', 'Is that even a number???', 'Guess again', 'Do better this time'];
 
     var number = prompt('Guess how many years I worked in elementary schools');
 
     for (var i = 0; i < 4; i++) {
       if (parseInt(number) === 2){
         alert(responses[0]);
+        console.log('this happened');
         correctAnswers++;
         break;
       }
@@ -78,16 +80,9 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
       }
       console.log('User A2: ' + number);
     }
-    }
   }
 
-//sixth question where user guesses a number; four tries
-
-  console.log('Q6: Guess how many years I worked in elementary schools');
-  console.log('Correct A6: 2');
-  var i = 0;
-  for (var i = 0; i < 4; i++) {
-
+  elementaryYears();
 
 //seventh question about
   interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
