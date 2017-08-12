@@ -34,6 +34,12 @@ h1 {
   font-family: 'Alegreya SC', serif;
 }
 
+h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
 span.song {
   font-size: 10px;
 }
