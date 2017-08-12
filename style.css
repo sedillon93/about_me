@@ -7,7 +7,7 @@
 }
 
 .indent {
-  padding: 100px;
+  padding: 60px;
 }
 
 body {
@@ -27,7 +27,24 @@ body {
 h1 {
   font-size: 50px;
   text-align: center;
+  font-weight: bold;
+  margin: auto;
+  border-bottom: 5px groove #47d2b2;
 }
+
+span {
+  font-size: 10px;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+/*a:link {
+  color: green;
+  text-decoration: none;
+}*/
 
 .snowflake {
   width: 2%;
@@ -37,6 +54,7 @@ h1 {
   width: 33%;
   min-width: 150px;
   margin-left: 33%;
+  padding: 25px 5px;
 }
 
 .col-2 {
@@ -51,18 +69,12 @@ h1 {
   padding-top: 20px;
 }
 
-.knowMeTitle {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin: auto;
-}
-
 .professionalTitle {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 .faveThingsTitle {
@@ -70,6 +82,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 .factTitle {
@@ -77,11 +90,17 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 /*.funFacts, .professional, .books {
   border: 5px groove red;
 }*/
+
+ol, ul {
+  margin: auto;
+  margin-bottom: 20px;
+}
 
 ol.books {
   padding-left: 60px;
