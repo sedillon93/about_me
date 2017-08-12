@@ -84,6 +84,11 @@ a:hover {
   margin-bottom: 18px;
 }
 
+span.listItemTitle {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 .faveThingsTitle {
   font-size: 28px;
   text-align: center;
