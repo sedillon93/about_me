@@ -11,6 +11,7 @@
 }
 
 body {
+  font-family: 'PT Serif', serif;
   color: #5f1e07;
   font-size: 25px;
   background-image: url(http://www.horadent.com/i/2017/05/watercolor-wallpapers-free.jpg);
@@ -30,6 +31,7 @@ h1 {
   font-weight: bold;
   margin: auto;
   border-bottom: 5px groove #47d2b2;
+  font-family: 'Alegreya SC', serif;
 }
 
 span.song {
