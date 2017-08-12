@@ -1,5 +1,5 @@
 * {
-  color: #692208;
+  color: #351075;
 }
 
 .clearFix {
@@ -36,15 +36,14 @@ span {
   font-size: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: blue;
   text-decoration: none;
 }
-
-/*a:link {
-  color: green;
-  text-decoration: none;
-}*/
 
 .snowflake {
   width: 2%;
