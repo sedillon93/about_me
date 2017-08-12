@@ -2,25 +2,27 @@
 
 //create variable for tally of correct answers to be displayed at end of game
 var correctAnswers = 0;
-
+var yesArray = ['y', 'yes'];
+var noArray = ['n', 'no'];
 //ask user for their name and if they would like to play my guessing game
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
+var initiateGame = 'Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.';
 
-var playGame = prompt('Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.');
-console.log('Would you like to get to know me? Enter yes or no');
-if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
-  console.log('Yes, you would like to play my guessing game.');
+var playGame = prompt(initiateGame);
+console.log(initiateGame);
+if (yesArray.includes(playGame.toLowerCase())) {
+  console.log(playGame);
   alert('Wonderful! Let\'s play :)');
 
   function trueFalse() {
 
     //trueFalseArray order: question[0], correct answer array[1], correct response[2], incorrect response[3], nonsense response[4], incorrect answers[5]
     var trueFalseArray = [
-      question1 = ['Was I born in Washington state?', ['no', 'n'], 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?', ['yes', 'y']],
-      quesiton2 = ['In college did I major in chemistry?', ['no', 'n'], 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?', ['yes', 'y']],
-      quesiton3 = ['Did I spend five years studying German in school?', ['yes', 'y'], 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?', ['no', 'n']],
-      question4 = ['Did I go to Colgate University?', ['yes', 'y'], 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?', ['no', 'n']],
-      question5 = ['Is fall my favorite season?', ['yes', 'y'], 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?', ['no', 'n']]
+      question1 = ['Was I born in Washington state?', noArray, 'A correct answer on the first try! Aren\'t you off to a good start?', 'Good try! But the answer is no', 'Why can\'t you follow directions?', yesArray],
+      quesiton2 = ['In college did I major in chemistry?', noArray, 'Good job! You got it right!', 'Good try! But that isn\'t the right answer', 'Why can\'t you follow directions?', yesArray],
+      quesiton3 = ['Did I spend five years studying German in school?', yesArray, 'High five! You got it!', 'So close! But the answer is yes', 'Why can\'t you follow directions?', noArray],
+      question4 = ['Did I go to Colgate University?', yesArray, 'Well done! You\'re doing really well', 'Sorry, you missed that one', 'Why can\'t you follow directions?', noArray],
+      question5 = ['Is fall my favorite season?', yesArray, 'Wow! You know me really well!', 'Awww, that\'s not the right answer :(', 'Why can\'t you follow directions?', noArray]
     ];
 
     //conditional to ask the true/false questions
@@ -71,7 +73,6 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
       console.log('User A2: ' + number);
     }
   }
-
   //call elementaryYears function
   elementaryYears();
 
@@ -106,7 +107,7 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   interests();
 
   //display game result with personalized message for user
-  scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
+  var scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
   if (correctAnswers < 4) {
     alert(scoreMessage + ' You\'ll do better next time.');
   }
@@ -116,7 +117,12 @@ if (playGame.toLowerCase() === 'y' || playGame.toLowerCase() === 'yes') {
   console.log(correctAnswers + ' answers correct of seven questions');
 }
 
-else {
+else if (noArray.includes(playGame.toLowerCase())) {
   alert('That\'s too bad. Maybe another time.');
   console.log('No, you do not want to play');
+}
+else {
+  while (!noArray.includes(playGame.toLowerCase()) && !yesArray.includes(playGame.toLowerCase())) {
+    var playGame = prompt('At least write y or n, lazy!');
+  }
 }
