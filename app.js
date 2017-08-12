@@ -64,8 +64,11 @@ if (yesArray.includes(playGame.toLowerCase())) {
       else if (parseInt(number) > 2){
         number = prompt(responses[2] + responses[4]);
       }
-      else {
+      else if (i < 4){
         number = prompt(responses[3] + responses[5]);
+      }
+      else {
+        alert('The correct answer was 2.');
       }
       console.log('User A2: ' + number);
     }

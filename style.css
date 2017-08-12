@@ -84,9 +84,13 @@ a:hover {
   margin-bottom: 18px;
 }
 
-span.listItemTitle {
+span.profListTitle {
   font-size: 22px;
   text-transform: uppercase;
+}
+
+.profSublist {
+  font-size: 22px;
 }
 
 .faveThingsTitle {
