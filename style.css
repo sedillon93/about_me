@@ -47,6 +47,10 @@ h1 {
   overflow: auto;
 }
 
+.professionalTitle, .faveThingsTitle {
+  padding-top: 20px;
+}
+
 .knowMeTitle {
   font-size: 40px;
   text-align: center;
@@ -80,7 +84,11 @@ h1 {
 }*/
 
 ol.books {
-  padding-right: 10px;
+  padding-left: 60px;
+}
+
+ul.funFacts {
+  padding-left: 30px;
 }
 
 .intro {
