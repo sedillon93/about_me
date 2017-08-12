@@ -6,10 +6,14 @@
   clear: both;
 }
 
+.test {
+  width: 100;
+  overflow: auto;
+}
+
 body {
   color: #5f1e07;
   font-size: 25px;
-  /*background-image: url(https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=17091338);*/
   background-image: url(http://www.horadent.com/i/2017/05/watercolor-wallpapers-free.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,23 +33,17 @@ h1 {
   box-sizing: border-box;
   width: 50%;
   margin: auto;
+  overflow: auto;
 }
 
-/*.col-3 {
-  float: left;
-  box-sizing: border-box;
-  width: 25%;
-  margin: auto;
-}*/
-
-.knowMe {
+.knowMeTitle {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
   margin: auto;
 }
 
-.proTitle {
+.professionalTitle {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
