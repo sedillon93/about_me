@@ -56,19 +56,23 @@ if (yesArray.includes(playGame.toLowerCase())) {
       if (parseInt(number) === 2){
         alert(responses[0]);
         correctAnswers++;
+        console.log(i);
         break;
       }
-      else if (parseInt(number) < 2){
-        number = prompt(responses[1] + responses[4]);
+      else if (parseInt(number) < 2 && i < 3){
+        number = prompt(responses[1] + ' ' + responses[4]);
+        console.log(i);
       }
-      else if (parseInt(number) > 2){
-        number = prompt(responses[2] + responses[4]);
+      else if (parseInt(number) > 2 && i < 3){
+        number = prompt(responses[2] + ' ' + responses[4]);
+        console.log(i);
       }
-      else if (i < 4){
-        number = prompt(responses[3] + responses[5]);
+      else if (parseInt(number) !== 2 && i < 3){
+        number = prompt(responses[3] + ' ' + responses[5]);
       }
       else {
-        alert('The correct answer was 2.');
+        alert('The correct answer was 2 years.');
+        console.log(i);
       }
       console.log('User A2: ' + number);
     }
@@ -108,7 +112,7 @@ if (yesArray.includes(playGame.toLowerCase())) {
   interests();
 
   //display game result with personalized message for user
-  var scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of seven questions.';
+  var scoreMessage = 'Thanks for playing my game ' + name + '. ' + 'You got ' + correctAnswers + ' answers correct out of 7 questions.';
   if (correctAnswers < 4) {
     alert(scoreMessage + ' You\'ll do better next time.');
   }
