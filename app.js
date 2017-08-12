@@ -58,17 +58,17 @@ if (yesArray.includes(playGame.toLowerCase())) {
         correctAnswers++;
         break;
       }
-      else if (parseInt(number) < 2){
-        alert(responses[1]);
-        number = prompt(responses[4]);
+      else if (parseInt(number) < 2 && i < 4){
+        number = prompt(responses[1] + ' ' + responses[4]);
       }
-      else if (parseInt(number) > 2){
-        alert(responses[2]);
-        number = prompt(responses[4]);
+      else if (parseInt(number) > 2 && i < 4){
+        number = prompt(responses[2] + ' ' + responses[4]);
+      }
+      else if (parseInt(number) !== 2 || i < 4){
+        number = prompt(responses[3] + ' ' + responses[5]);
       }
       else {
-        alert(responses[3]);
-        number = prompt(responses[5]);
+        alert('The correct answer was 2 years.');
       }
       console.log('User A2: ' + number);
     }
