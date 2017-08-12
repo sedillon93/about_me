@@ -107,6 +107,7 @@ ol.books {
 
 ul.funFacts {
   padding-left: 30px;
+  margin: auto;
 }
 
 .intro {
@@ -123,4 +124,8 @@ ul.funFacts {
 .answer {
   font-size: 20px;
   color: #d24210;
+}
+
+footer {
+  margin-top: 50px;
 }
