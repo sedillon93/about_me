@@ -48,7 +48,7 @@ if (yesArray.includes(playGame.toLowerCase())) {
   //sixth question where user guesses a number; four tries
   function elementaryYears() {
     //array of responses: correst answer[0], too low[1], too high[2], nonsense[3], prompt to guess again[4], do better[5]
-    var responses = ['Great guess! How did you know that...', 'Your guess is too low', 'That\'s too high', 'Is that even a number???', 'Guess again', 'Do better this time'];
+    var responses = ['Great guess! How did you know that...', 'Your guess is too low. ', 'That\'s too high. ', 'Is that even a number???', 'Guess again', 'Do better this time'];
 
     var number = prompt('Guess how many years I worked in elementary schools');
 
@@ -59,16 +59,13 @@ if (yesArray.includes(playGame.toLowerCase())) {
         break;
       }
       else if (parseInt(number) < 2){
-        alert(responses[1]);
-        number = prompt(responses[4]);
+        number = prompt(responses[1] + responses[4]);
       }
       else if (parseInt(number) > 2){
-        alert(responses[2]);
-        number = prompt(responses[4]);
+        number = prompt(responses[2] + responses[4]);
       }
       else {
-        alert(responses[3]);
-        number = prompt(responses[5]);
+        number = prompt(responses[3] + responses[5]);
       }
       console.log('User A2: ' + number);
     }
@@ -80,19 +77,20 @@ if (yesArray.includes(playGame.toLowerCase())) {
   function interests() {
     //array of my interests
     var interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
+    var altInterestArray = ['coding', 'biking', 'swimming', 'baking', 'reading', 'hiking'];
     //answers: accept message[0], correct response[1], incorrect response[2],
     var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.'];
 
-    var interest = prompt('What do you think is one of my favorite activities to do? (no -ing words)');
+    var interest = prompt('What do you think is one of my favorite activities to do?');
 
     counter = 5;
     for (var i = 0; i < 6; i++){
-      if (interestArray.includes(interest.toLowerCase())) {
+      if (interestArray.includes(interest.toLowerCase()) || altInterestArray.includes(interest.toLowerCase())) {
         alert(answersArray[1] + ' ' + answersArray[0] + ' ' + interestArray.join(', '));
         correctAnswers++;
         break;
       }
-      else if (!interestArray.includes(interest.toLowerCase()) && counter !== 0) {
+      else if ((!interestArray.includes(interest.toLowerCase()) || !altInterestArray.includes(interest.toLowerCase())) && counter > 0) {
         alert(answersArray[2]);
         interest = prompt('Take another guess! You have ' + counter + ' guess(es) left');
         counter -= 1;
