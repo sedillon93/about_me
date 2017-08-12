@@ -32,7 +32,7 @@ h1 {
   border-bottom: 5px groove #47d2b2;
 }
 
-span {
+span.song {
   font-size: 10px;
 }
 
@@ -103,6 +103,10 @@ ol, ul {
 
 ol.books {
   padding-left: 60px;
+}
+
+span.bookTitle {
+  font-style: italic;
 }
 
 ul.funFacts {
