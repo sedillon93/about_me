@@ -6,13 +6,24 @@
   clear: both;
 }
 
+.test {
+  width: 100;
+  overflow: auto;
+}
+
 body {
   color: #5f1e07;
   font-size: 25px;
-  background-image: url(https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=17091338);
+  background-image: url(http://www.horadent.com/i/2017/05/watercolor-wallpapers-free.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   }
+
+.backgroundOverlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  overflow: auto;
+}
 
 h1 {
   font-size: 50px;
@@ -24,16 +35,24 @@ h1 {
   box-sizing: border-box;
   width: 50%;
   margin: auto;
+  overflow: auto;
 }
 
-.proTitle {
+.knowMeTitle {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+}
+
+.professionalTitle {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
   margin: auto;
 }
 
-.faveThings {
+.faveThingsTitle {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
@@ -47,16 +66,9 @@ h1 {
   margin: auto;
 }
 
-.funFacts, .professional, .books {
+/*.funFacts, .professional, .books {
   border: 5px groove red;
-}
-
-.knowMe {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin: auto;
-}
+}*/
 
 ol.books {
   padding-right: 10px;
