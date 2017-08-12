@@ -26,6 +26,20 @@ h1 {
   margin: auto;
 }
 
+/*.col-3 {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  margin: auto;
+}*/
+
+.knowMe {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+}
+
 .proTitle {
   font-size: 28px;
   text-align: center;
@@ -33,7 +47,7 @@ h1 {
   margin: auto;
 }
 
-.faveThings {
+.faveThingsTitle {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
@@ -47,16 +61,9 @@ h1 {
   margin: auto;
 }
 
-.funFacts, .professional, .books {
+/*.funFacts, .professional, .books {
   border: 5px groove red;
-}
-
-.knowMe {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin: auto;
-}
+}*/
 
 ol.books {
   padding-right: 10px;
