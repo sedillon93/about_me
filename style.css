@@ -1,5 +1,5 @@
 * {
-  color: #692208;
+  color: #351075;
 }
 
 .clearFix {
@@ -7,10 +7,11 @@
 }
 
 .indent {
-  padding: 100px;
+  padding: 60px;
 }
 
 body {
+  font-family: 'PT Serif', serif;
   color: #5f1e07;
   font-size: 25px;
   background-image: url(http://www.horadent.com/i/2017/05/watercolor-wallpapers-free.jpg);
@@ -27,6 +28,29 @@ body {
 h1 {
   font-size: 50px;
   text-align: center;
+  font-weight: bold;
+  margin: auto;
+  border-bottom: 5px groove #47d2b2;
+  font-family: 'Alegreya SC', serif;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+span.song {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 .snowflake {
@@ -37,6 +61,7 @@ h1 {
   width: 33%;
   min-width: 150px;
   margin-left: 33%;
+  padding: 25px 5px;
 }
 
 .col-2 {
@@ -47,11 +72,8 @@ h1 {
   overflow: auto;
 }
 
-.knowMeTitle {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin: auto;
+.professionalTitle, .faveThingsTitle {
+  padding-top: 20px;
 }
 
 .professionalTitle {
@@ -59,6 +81,16 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
+}
+
+span.profListTitle {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.profSublist {
+  font-size: 22px;
 }
 
 .faveThingsTitle {
@@ -66,6 +98,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 .factTitle {
@@ -73,14 +106,29 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 /*.funFacts, .professional, .books {
   border: 5px groove red;
 }*/
 
+ol, ul {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 ol.books {
-  padding-right: 10px;
+  padding-left: 60px;
+}
+
+span.bookTitle {
+  font-style: italic;
+}
+
+ul.funFacts {
+  padding-left: 30px;
+  margin: auto;
 }
 
 .intro {
@@ -97,4 +145,8 @@ ol.books {
 .answer {
   font-size: 20px;
   color: #d24210;
+}
+
+footer {
+  margin-top: 50px;
 }
