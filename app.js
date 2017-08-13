@@ -4,12 +4,17 @@
 var correctAnswers = 0;
 var yesArray = ['y', 'yes'];
 var noArray = ['n', 'no'];
-//ask user for their name and if they would like to play my guessing game
+//ask user for their name and if they would like to play
 var name = prompt('Hello there! Glad you stopped by today. What\'s your name?');
 var initiateGame = 'Hello ' + name + '!' + ' Would you like to get to know me a little better through my guessing game? Type "y" or "yes" for yes or "n" or "no" for no.';
-
 var playGame = prompt(initiateGame);
 console.log(initiateGame);
+console.log(playGame);
+
+while (!noArray.includes(playGame.toLowerCase()) && !yesArray.includes(playGame.toLowerCase())) {
+  playGame = prompt('At least write y or n, lazy!');
+}
+
 if (yesArray.includes(playGame.toLowerCase())) {
   console.log(playGame);
   alert('Wonderful! Let\'s play :)');
@@ -125,9 +130,4 @@ if (yesArray.includes(playGame.toLowerCase())) {
 else if (noArray.includes(playGame.toLowerCase())) {
   alert('That\'s too bad. Maybe another time.');
   console.log('No, you do not want to play');
-}
-else {
-  while (!noArray.includes(playGame.toLowerCase()) && !yesArray.includes(playGame.toLowerCase())) {
-    var playGame = prompt('At least write y or n, lazy!');
-  }
 }
