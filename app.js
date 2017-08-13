@@ -88,8 +88,8 @@ if (yesArray.includes(playGame.toLowerCase())) {
   //seventh question: interests!
   function interests() {
     //array of my interests
-    var interestArray = ['code','bike', 'swim', 'bake', 'read', 'hike'];
-    var altInterestArray = ['coding', 'biking', 'swimming', 'baking', 'reading', 'hiking'];
+    var interestArray = ['code','bike', 'swim', 'bake', 'read', 'kickbox'];
+    var altInterestArray = ['coding', 'biking', 'baking', 'swimming', 'reading', 'kickboxing'];
     //answers: accept message[0], correct response[1], incorrect response[2],
     var answersArray = ['I would have accepted', 'Great!', 'No, that\'s not one of my favorite things', 'Good try.'];
 
